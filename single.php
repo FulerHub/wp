@@ -66,7 +66,7 @@
             <?php endif; ?>
         </div>
     </section>
-    <?php get_footer('newform'); ?>
-<?php get_footer('map'); ?>
+    <?php if(get_field('form')) get_template_part( 'template/form' ); ?>
+    <?php if(get_field('maps')) get_template_part( 'template/map' ); ?>
 
     <?php get_footer(); ?>
